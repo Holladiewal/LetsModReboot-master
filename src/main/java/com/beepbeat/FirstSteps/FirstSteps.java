@@ -4,11 +4,14 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import com.beepbeat.FirstSteps.reference.Reference;
 
-@Mod(modid="FirstSteps", name="FirstSteps" ,version="1.7.2-1.0")
+
+
+@Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME ,version=Reference.VERSION)
 public class FirstSteps
 {
-    @Mod.Instance("FirstSteps")
+    @Mod.Instance(Reference.MOD_ID)
     public static FirstSteps instance;
 
     @Mod.EventHandler
